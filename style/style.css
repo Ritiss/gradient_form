@@ -1,0 +1,136 @@
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: "Comic Sans MS", Tahoma, serif;
+  background: #232b3d;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form {
+  margin-top: 20px;
+  margin-bottom: 150px;
+  width: 300px;
+  border: solid rgba(75, 64, 145, 0.42);
+  border-width: 5px 0 5px 0;
+  border-radius: 40% / 5%;
+  padding: 25px 20px 15px 20px;
+}
+
+.labelHead {
+  margin-right: 10px;
+  width: 90px;
+  word-wrap: anywhere;
+}
+
+h2, p {
+  margin: 0 0 10px 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+h1,
+h2,
+p,
+span,
+form,
+button,
+label,
+input {
+  background: linear-gradient(250deg, #1bc2af, #5a4ea0, #ba2b69);
+  background-size: 500% 500%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: perehod 10s infinite;
+}
+
+label,
+input,
+span {
+  display: inline-block;
+}
+
+label,
+span {
+  text-align: right;
+}
+
+fieldset {
+  border: 0;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+input {
+  margin-bottom: 10px;
+  width: 140px;
+  border: solid rgba(75, 64, 145, 0.42);
+  border-width: 2px 0 2px 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  cursor: pointer;
+}
+
+input[type="number"] {
+  width: 35px;
+}
+
+input[type="reset"],
+#button_gr {
+  margin-left: 20px;
+  width: 120px;
+  border: solid rgba(75, 64, 145, 0.42);
+  border-width: 5px 0 5px 0;
+  font-family: "Comic Sans MS", Tahoma, serif;
+  cursor: pointer;
+}
+
+input[type="reset"]:hover,
+#button_gr:hover {
+  background: rgba(255, 255, 255, 0.1)
+}
+
+input[type="reset"]:active,
+#button_gr:active {
+  background-image: linear-gradient(to bottom, #ffffff, #becfff);
+}
+
+#femaleGender {
+  margin-left: 109px;
+}
+
+#isJava {
+  margin-left: 35px;
+}
+
+#isOther {
+  margin-left: 63px;
+}
+
+.checkHead {
+  margin-left: 20px;
+}
+
+@keyframes perehod {
+  to {
+    background-position: 0 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  from {
+    background-position: 0 50%
+  }
+}

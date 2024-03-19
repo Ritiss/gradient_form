@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>PRACTICE</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+<main>
+    <h1>PRACTICE</h1>
+    <form>
+        <h2>Applicant's profile</h2>
+        <fieldset>
+            <label class="labelHead" for="lastnContact">Last name</label>
+            <input id="lastnContact" name="lastnContact" type="text" required>
+            <br />
+            <label class="labelHead" for="nameContact">Name</label>
+            <input id="nameContact" name="nameContact" type="text" required>
+            <br />
+            <label class="labelHead" for="patronContact">Patronymic</label>
+            <input id="patronContact" name="patronContact" type="text" required>
+            <br />
+            <span class="labelHead">Gender</span>
+            <input id="maleGender" name="genType" value="male" type="radio" checked>
+            <label for="maleGender">Male</label>
+            <br />
+            <input id="femaleGender" name="genType" value="female" type="radio">
+            <label for="femaleGender">Female</label>
+            <br />
+            <label class="labelHead" for="birthDate">Birth date</label>
+            <input id="birthDate" name="birthDate" max="2022-06-17" type="date" required>
+            <br />
+            <label class="labelHead" for="phoneContact">Phone</label>
+            <input id="phoneContact" name="phoneContact" pattern="^[ 0-9-]+$" placeholder="8-000-000-00-00" maxlength="10" type="tel" required>
+            <br />
+            <p>Do you have skills in</p>
+            <input class="checkHead" id="isHtml" name="checkHead" type="checkbox" value=" HTML & CSS">
+            <label for="isHtml">HTML & CSS</label>
+            <input class="checkHead" id="isPython" name="checkHead" type="checkbox" value=" Python">
+            <label for="isPython">Python</label>
+            <br />
+            <input class="checkHead" id="isJaba" name="checkHead" type="checkbox" value=" JavaScript">
+            <label for="isJaba">JavaScript</label>
+            <input class="checkHead" id="isJava" name="checkHead" type="checkbox" value=" Java">
+            <label for="isJava">Java</label>
+            <br />
+            <input class="checkHead" id="isSQL" name="checkHead" type="checkbox" value=" mySQL">
+            <label for="isSQL">mySQL</label>
+            <input class="checkHead" id="isOther" name="checkHead" type="checkbox" value=" Other">
+            <label for="isOther">Other</label>
+        </fieldset>
+        <button id="button_gr">Send</button>
+        <input type="reset" value="Clear">
+    </form>
+</main>
+<script type="module" src="../jaba/main.js"></script>
+</body>
+</html>
